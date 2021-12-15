@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --myDark: #232931;
+    --myDark2: #393E46;
+    --myLight: #EEEEEE;
+    --myGreen: #4ECCA3;
+    --myBlue: #4ea4cc;
+    --myRed: #cc4e74;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--myDark);
+    color: var(--myDark2)
+}
+
+.container {
+    margin-top: 5em;
+}
+
+.number {
+    color: var(--myLight);
+}
+
+.winner{
+    color: var(--myGreen)
+}
+
+.loser{
+    color: var(--myRed)
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 700;
+    text-align: center;
+    color: var(--myLight);
+}
+
+#scoreDisplay {
+    font-size: 20em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.selector {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 1em 0;
+   color: var(--myLight);
+}
+
+#buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.btn {
+    padding: 1em 3em;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 5px 5px 10px #171b1d;
+    font-weight: 500;
+    color: var(--myLight);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease-out;
+}
+
+.btn:active {
+    transform: translateY(2px);
+    transition: all 0.3s;
+}
+
+#p1Button {
+    background-color: var(--myBlue);
+}
+
+#p2Button {
+    background-color: var(--myGreen);
+}
+
+#resetButton {
+    background-color: var(--myRed);
+}
+
+button:disabled {
+    opacity: 30%;
+}
+
+#playTo {
+    border: none;
+    background-color: var(--myDark2);
+    border-radius: 5px;
+    color: var(--myLight);
+    padding: 0.5em 0.5em;
+}

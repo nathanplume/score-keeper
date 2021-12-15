@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score keeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Score</h1>
+        <p id="scoreDisplay"><span id="p1Display" class="number">0</span>-<span id="p2Display" class="number">0</span>
+        </p>
+        <div class="selector">
+            <label for="playTo">Playing to &nbsp;</label>
+            <select name="" id="playTo">
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+                <option value="6">Six</option>
+                <option value="7">Seven</option>
+                <option value="8">Eight</option>
+            </select>
+        </div>
+
+        <div id="buttons">
+            <button id="p1Button" class="btn">Player One</button>
+            <button id="p2Button" class="btn">Player Two</button>
+            <button id="resetButton" class="btn">Reset</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
